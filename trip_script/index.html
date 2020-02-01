@@ -79,25 +79,27 @@
         <div class="section_box3 box">
             <div class="wrap">
                 <h2>겨울엔 비발디파크로</h2>
-                <div class="bibbox">
-                    <div class="pic"></div>
-                    <div class="detail">
-                        <p class="detail1">티켓/교통패스 ・ 강원도</p>
-                        <p class="detail2">[펭수 그립톡 한정판]비발디파크 스노위랜드 주간권 이용권...</p>
+                <div id="bib_body">
+                    <div class="bibbox">
+                        <div class="pic"></div>
+                        <div class="detail">
+                            <p class="detail1">티켓/교통패스 ・ 강원도</p>
+                            <p class="detail2">[펭수 그립톡 한정판]비발디파크 스노위랜드 주간권 이용권...</p>
+                        </div>
                     </div>
-                </div>
-                <div class="bibbox">
-                    <div class="pic"></div>
-                    <div class="detail">
-                        <p class="detail1">티켓/교통패스 ・ 강원도</p>
-                        <p class="detail2">[펭수 그립톡 한정판]비발디파크 스노위랜드 주간권 이용권...</p>
+                    <div class="bibbox">
+                        <div class="pic"></div>
+                        <div class="detail">
+                            <p class="detail1">티켓/교통패스 ・ 강원도</p>
+                            <p class="detail2">[펭수 그립톡 한정판]비발디파크 스노위랜드 주간권 이용권...</p>
+                        </div>
                     </div>
-                </div>
-                <div class="bibbox">
-                    <div class="pic"></div>
-                    <div class="detail">
-                        <p class="detail1">티켓/교통패스 ・ 강원도</p>
-                        <p class="detail2">[펭수 그립톡 한정판]비발디파크 스노위랜드 주간권 이용권...</p>
+                    <div class="bibbox">
+                        <div class="pic"></div>
+                        <div class="detail">
+                            <p class="detail1">티켓/교통패스 ・ 강원도</p>
+                            <p class="detail2">[펭수 그립톡 한정판]비발디파크 스노위랜드 주간권 이용권...</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,6 +272,37 @@
     getQueryString()
     HeaderRender("index")
     ActiveList(0)
+    </script>
+    <script>
+        String.prototype.replaceAll = function(org, dest) {
+                return this.split(org).join(dest);
+        }
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                // console.log(xhttp.response)
+                let returnJson = JSON.parse(xhttp.response)
+                let returnArray = [];
+                for(let i = 0; i < returnJson.length; i++){
+                    returnArray.push(`
+                        <div class="bibbox">
+                            <div class="pic" style="background-image:url(${returnJson[i].pic});"></div>
+                            <div class="detail">
+                                <p class="detail1">${returnJson[i].detail1}</p>
+                                <p class="detail2">${returnJson[i].detail2}</p>
+                            </div>
+                        </div>
+                    `)
+                }
+                console.log(returnArray)
+
+                const targetHtml = document.getElementById('bib_body')
+                targetHtml.innerHTML = returnArray.toString().replaceAll(",","")
+            }
+        }
+        xhttp.open('POST', 'bibbox.json', true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("data=0")
     </script>
 </body>
 </html>

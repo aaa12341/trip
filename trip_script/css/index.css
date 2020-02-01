@@ -179,7 +179,7 @@ div.round_boxs .inner_box h3{
     background-image: url(../img/bibi.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     border-radius: 4px;
 }
 .bibbox .detail{
