@@ -9,7 +9,7 @@ function getQueryString(){
     });
     console.log(params)
     return params;
-   }
+}
 function HeaderRender(A){
     if(A == "index"){
         Text = "어디로 떠나세요?"
@@ -31,55 +31,55 @@ function HeaderRender(A){
         Text = "여행준비"
     }
     
-Header.innerHTML = ` 
-    <div class="section_box">
-        <div class="boxs">
-            <div class="wrap">
-                <div class="box1">
-                    <a href="index.html">
-                        <h1><img src="img/logo.png" alt="로고"></h1>
-                    </a>
-                    <ul>
-                        <li>파트너 등록하기</li>
-                        <li>로그인</li>
-                        <li>회원가입</li>
-                    </ul>
-                    <div class="hams">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+    Header.innerHTML = ` 
+        <div class="section_box">
+            <div class="boxs">
+                <div class="wrap">
+                    <div class="box1">
+                        <a href="index.html">
+                            <h1><img src="img/logo.png" alt="로고"></h1>
+                        </a>
+                        <ul>
+                            <li>파트너 등록하기</li>
+                            <li>로그인</li>
+                            <li>회원가입</li>
+                        </ul>
+                        <div class="hams">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <ul>
+                            <li class="nav_list"><a href="index.html?id=ticket&pageno=0">투어&티켓</a></li>
+                            <li class="nav_list"><a href="airplane.html">항공권</a></li>
+                            <li class="nav_list"><a href="home.html">숙소</a></li>
+                            <li class="nav_list"><a href="main.html?id=a2&pageno=3">특가여행</a></li>
+                            <li class="nav_list"><a href="main.html?id=a3&pageno=4">패키지</a></li>
+                            <li class="nav_list"><a href="main.html?id=a4&pageno=5">여행자보험</a></li>
+                            <li class="nav_list"><a href="main.html?id=a5&pageno=6">여행준비</a></li>
+
+                            <!-- <li class="nav_list"><a href="index.html?id=ticket&pageno=0">투어&티켓</a></li>
+                            <li class="nav_list"><a href="main.html?id=airplan&pageno=1">항공권</a></li>
+                            <li class="nav_list"><a href="main.html?id=home&pageno=2">숙소</a></li>
+                            <li class="nav_list"><a href="main.html?id=a2&pageno=3">특가여행</a></li>
+                            <li class="nav_list"><a href="main.html?id=a3&pageno=4">패키지</a></li>
+                            <li class="nav_list"><a href="main.html?id=a4&pageno=5">여행자보험</a></li>
+                            <li class="nav_list"><a href="main.html?id=a5&pageno=6">여행준비</a></li> -->
+                        </ul>
                     </div>
                 </div>
-                <div class="box2">
-                    <ul>
-                        <li class="nav_list"><a href="index.html?id=ticket&pageno=0">투어&티켓</a></li>
-                        <li class="nav_list"><a href="airplane.html">항공권</a></li>
-                        <li class="nav_list"><a href="home.html">숙소</a></li>
-                        <li class="nav_list"><a href="main.html?id=a2&pageno=3">특가여행</a></li>
-                        <li class="nav_list"><a href="main.html?id=a3&pageno=4">패키지</a></li>
-                        <li class="nav_list"><a href="main.html?id=a4&pageno=5">여행자보험</a></li>
-                        <li class="nav_list"><a href="main.html?id=a5&pageno=6">여행준비</a></li>
-
-                        <!-- <li class="nav_list"><a href="index.html?id=ticket&pageno=0">투어&티켓</a></li>
-                        <li class="nav_list"><a href="main.html?id=airplan&pageno=1">항공권</a></li>
-                        <li class="nav_list"><a href="main.html?id=home&pageno=2">숙소</a></li>
-                        <li class="nav_list"><a href="main.html?id=a2&pageno=3">특가여행</a></li>
-                        <li class="nav_list"><a href="main.html?id=a3&pageno=4">패키지</a></li>
-                        <li class="nav_list"><a href="main.html?id=a4&pageno=5">여행자보험</a></li>
-                        <li class="nav_list"><a href="main.html?id=a5&pageno=6">여행준비</a></li> -->
-                    </ul>
+            </div>
+            <div class="middle_box">
+                <div class="wrap">
+                    <h2>${Text}</h2>
+                    <div class="box3">
+                        <input type="text" placeholder="여행지나 상품을 검색해보세요!">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="middle_box">
-            <div class="wrap">
-                <h2>${Text}</h2>
-                <div class="box3">
-                    <input type="text" placeholder="여행지나 상품을 검색해보세요!">
-                </div>
-            </div>
-        </div>
-    </div>`
+        </div>`
     }
     function ActiveList(A){
         const NavList = document.querySelectorAll('.nav_list');
