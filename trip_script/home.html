@@ -65,24 +65,9 @@
     </div>
     <script src="js/main.min.js"></script>
     <script>
-        getQueryString()
         HeaderRender("home")
         ActiveList(2)
         FooterRender()
-        const anilList = document.getElementById('list')
-        let no2 = 0
-        setInterval(() => {
-            if (no2 == 120) {
-                no2 = 0
-                anilList.style.transition=`0s`
-                anilList.style.transform=`translateY(0px)`
-                
-            } else {
-                no2 +=40
-                anilList.style.transition =`.7s ease-in-out`
-                anilList.style.transform =`translateY(-${no2}px)`
-            }
-        }, 1500);
 
         const ActList = document.querySelectorAll('.list');
         console.log(ActList);

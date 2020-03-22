@@ -206,7 +206,6 @@
    
     <script src="js/main.min.js"></script>
     <script>
-        getQueryString()
         HeaderRender("index")
         ActiveList(0)
         FooterRender()
@@ -218,9 +217,7 @@
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                // console.log(xhttp.response)
                 let returnJson = JSON.parse(xhttp.response)
-                // let result = returnJson;
                 let result = returnJson.filter((x) => {
                     return x.cate == "ggool";
                 })
