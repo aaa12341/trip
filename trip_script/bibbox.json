@@ -1,26 +1,202 @@
 [
     {
-        "pic" : "img/bibi.jpg",
-        "detail1" : "티켓/교통패스 ・ 강원도",
-        "detail2": "[펭수 그립톡 한정판]비발디파크 스노위랜드 주간권 이용권...",
-        "cate": "phone"
-    },
-    {
-        "pic" : "img/cebu.jpg",
+        "pic" : "img/ggool1.jpg",
         "detail1" : "티켓/교통패스 ・ 서울",
-        "detail2": "[펭수 핸드폰 한정판]에버랜드 스노위랜드 주간권 이용권...",
-        "cate": "phone"
+        "detail2": "[쿠폰할인] 에버랜드 종일&오후 자유이용권 (~3/31)",
+        "cate": "ggool"
     },
     {
-        "pic" : "img/danang.jpg",
-        "detail1" : "티켓/교통패스 ・ 춘천",
-        "detail2": "[펭수 담요 한정판]롯데월드 스노위랜드 주간권 이용권...",
-        "cate": "bag"
+        "pic" : "img/ggool2.jpg",
+        "detail1" : "티켓/교통패스 ・ 서울",
+        "detail2": "서울 롯데월드 자유이용권(종합/After4) (~4/3)",
+        "cate": "ggool"
     },
     {
-        "pic" : "img/oska.jpg",
-        "detail1" : "티켓/교통패스 ・ 고양시",
-        "detail2": "[펭수 가방 한정판]놀이공원 스노위랜드 주간권 이용권...",
-        "cate": "bag"
+        "pic" : "img/ggool3.jpg",
+        "detail1" : "티켓/교통패스 ・ 서울",
+        "detail2": "[서울 잠실] 롯데월드 아이스링크 이용권",
+        "cate": "ggool"
+    },
+    {
+        "pic" : "img/ggool4.jpg",
+        "detail1" : "티켓/교통패스 ・ 강원도",
+        "detail2": "[쿠폰할인] 평창 용평리조트 스키 리프트권 & 렌탈권 (~3/22)",
+        "cate": "ggool"
+    },
+    {
+        "pic" : "img/jeju1.jpg",
+        "detail1" : "스냅촬영 ・ 제주도",
+        "detail2": "(1시간) 제주 야경 스냅 촬영 (대한민국/제주)",
+        "cate": "jeju"
+    },
+    {
+        "pic" : "img/jeju2.jpg",
+        "detail1" : "가이드 투어 ・ 제주도",
+        "detail2": "[제주 택시 투어] 제주 토박이와 함께하는 즐거운 제주도 택시투어",
+        "cate": "jeju"
+    },
+    {
+        "pic" : "img/jeju3.jpg",
+        "detail1" : "티켓/교통패스 ・ 제주도",
+        "detail2": "[당일사용] 제주 산굼부리 입장권",
+        "cate": "jeju"
+    },
+    {
+        "pic" : "img/jeju4.jpg",
+        "detail1" : "가이드 투어 ・ 제주도",
+        "detail2": "제주 남부 숲길/해안 트레킹 여행(차량단독투어)",
+        "cate": "jeju"
+    },
+    {
+        "pic" : "img/guide1.jpg",
+        "detail1" : "패키지 ・ 이스탄불",
+        "detail2": "김철호 가이드의 터키 집중팩 7박9일)",
+        "cate": "guide"
+    },
+    {
+        "pic" : "img/guide2.jpg",
+        "detail1" : "패키지 ・ 파리",
+        "detail2": "이남일X어게인파리의 나의 첫 프랑스여행 8박10일",
+        "cate": "guide"
+    },
+    {
+        "pic" : "img/guide3.jpg",
+        "detail1" : "패키지 ・ 더블린",
+        "detail2": "[마리트 ONLY] 이선영 가이드의 스코틀랜드+아일랜드 7박10일",
+        "cate": "guide"
+    },
+    {
+        "pic" : "img/guide4.jpg",
+        "detail1" : "패키지 ・ 베를린",
+        "detail2": "[마리트 ONLY] Be Berliner의 베를린 집중팩 7박9일",
+        "cate": "guide"
+    },
+    {
+        "pic" : "img/air1.jpg",
+        "title" : "밴쿠버",
+        "trip": "서울 - 밴쿠버",
+        "date": "1월 1일 - 12월 31일",
+        "price": "672,000원 ~",
+        "cate": "air1"
+    },
+    {
+        "pic" : "img/air2.jpg",
+        "title" : "세부",
+        "trip": "서울 - 세부",
+        "date": "1월 1일 - 12월 31일",
+        "price": "176,800원 ~ ",
+        "cate": "air1"
+    },
+    {
+        "pic" : "img/air3.jpg",
+        "title" : "괌",
+        "trip": "서울 - 괌",
+        "date": "1월 1일 - 12월 31일",
+        "price": "203,900원 ~ ",
+        "cate": "air1"
+    },
+    {
+        "pic" : "img/air4.jpg",
+        "title" : "하와이/호놀룰루",
+        "trip": "서울 - 하와이/호놀룰루",
+        "date": "1월 1일 - 12월 31일",
+        "price": "773,100원 ~ ",
+        "cate": "air1"
+    },
+    {
+        "pic" : "img/air5.jpg",
+        "title" : "제주",
+        "trip": "서울 - 제주",
+        "date": "1월 1일 - 12월 31일",
+        "price": "28,400원 ~ ",
+        "cate": "air2"
+    },
+    {
+        "pic" : "img/air6.jpg",
+        "title" : "런던",
+        "trip": "서울 - 런던",
+        "date": "1월 1일 - 12월 31일",
+        "price": "801,100원 ~ ",
+        "cate": "air2"
+    },
+    {
+        "pic" : "img/air7.jpg",
+        "title" : "다낭",
+        "trip": "서울 - 다낭",
+        "date": "1월 1일 - 12월 31일",
+        "price": "365,900원 ~ ",
+        "cate": "air2"
+    },
+    {
+        "pic" : "img/air8.jpg",
+        "title" : "호치민",
+        "trip": "서울 - 호치민",
+        "date": "1월 1일 - 12월 31일",
+        "price": "217,100원 ~ ",
+        "cate": "air2"
+    },
+    {
+        "pic" : "img/air5.jpg",
+        "title" : "제주",
+        "trip": "서울 - 제주",
+        "date": "1월 1일 - 12월 31일",
+        "price": "28,400원 ~ ",
+        "cate": "home1"
+    },
+    {
+        "pic" : "img/air6.jpg",
+        "title" : "런던",
+        "trip": "서울 - 런던",
+        "date": "1월 1일 - 12월 31일",
+        "price": "801,100원 ~ ",
+        "cate": "home1"
+    },
+    {
+        "pic" : "img/air7.jpg",
+        "title" : "다낭",
+        "trip": "서울 - 다낭",
+        "date": "1월 1일 - 12월 31일",
+        "price": "365,900원 ~ ",
+        "cate": "home1"
+    },
+    {
+        "pic" : "img/air8.jpg",
+        "title" : "호치민",
+        "trip": "서울 - 호치민",
+        "date": "1월 1일 - 12월 31일",
+        "price": "217,100원 ~ ",
+        "cate": "home1"
+    },
+    {
+        "pic" : "img/air1.jpg",
+        "title" : "제주",
+        "trip": "서울 - 제주",
+        "date": "1월 1일 - 12월 31일",
+        "price": "28,400원 ~ ",
+        "cate": "home2"
+    },
+    {
+        "pic" : "img/air2.jpg",
+        "title" : "런던",
+        "trip": "서울 - 런던",
+        "date": "1월 1일 - 12월 31일",
+        "price": "801,100원 ~ ",
+        "cate": "home2"
+    },
+    {
+        "pic" : "img/air3.jpg",
+        "title" : "다낭",
+        "trip": "서울 - 다낭",
+        "date": "1월 1일 - 12월 31일",
+        "price": "365,900원 ~ ",
+        "cate": "home2"
+    },
+    {
+        "pic" : "img/air4.jpg",
+        "title" : "호치민",
+        "trip": "서울 - 호치민",
+        "date": "1월 1일 - 12월 31일",
+        "price": "217,100원 ~ ",
+        "cate": "home2"
     }
 ]

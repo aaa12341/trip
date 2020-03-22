@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>마이리얼트립</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/airplane.css">
-    <link rel="stylesheet" href="css/resposive.css">
+    <link rel="stylesheet" href="css/default.css">
 </head>
+<style>
+    header{background-image: url(../img/secondbg.png);}
+    header .boxs{border-bottom: 1px solid hsla(0,0%,100%,.3);}
+    header .middle_box h2 {margin-top: 30px;}
+    header .middle_box .box3 {margin-top: 50px;}
+</style>
 <body>
     <div id="wrap">
        <header></header>
@@ -77,8 +82,69 @@
     <script>
         getQueryString()
         HeaderRender("airplane")
-        ActiveList(0)
+        ActiveList(1)
         FooterRender()
+        const anilList = document.getElementById('list')
+        let no2 = 0
+        setInterval(() => {
+            if (no2 == 120) {
+                no2 = 0
+                anilList.style.transition=`0s`
+                anilList.style.transform=`translateY(0px)`
+                
+            } else {
+                no2 +=40
+                anilList.style.transition =`.7s ease-in-out`
+                anilList.style.transform =`translateY(-${no2}px)`
+            }
+        }, 1500);
+    </script>
+    <script>
+        String.prototype.replaceAll = function(org, dest) {
+                return this.split(org).join(dest);
+        }
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                let returnJson = JSON.parse(xhttp.response)
+                let result = returnJson.filter((x) => {
+                    return x.cate == "air1";
+                })
+                let returnArray = [];
+                for(let i = 0; i < result.length; i++){
+                    returnArray.push(`
+                        <div class="content_box">
+                        <div class="content_img" style="background-image:url(${result[i].pic})"></div>
+                        <div class="content_txt"><div class="nation">${result[i].title}</div>
+                        <span class="trip">${result[i].trip}<br/>${result[i].date}</span>
+                        <div class="price">${result[i].price}<em class="airline">직항</em></div></div>
+                        </div>
+                    `)
+                }
+
+                let result2 = returnJson.filter((x) => {
+                    return x.cate == "air2";
+                })
+                let returnArray2 = [];
+                for(let i = 0; i < result2.length; i++){
+                    returnArray2.push(`
+                    <div class="content_box">
+                        <div class="content_img" style="background-image:url(${result2[i].pic})"></div>
+                        <div class="content_txt"><div class="nation">${result2[i].title}</div>
+                        <span class="trip">${result2[i].trip}<br/>${result2[i].date}</span>
+                        <div class="price">${result2[i].price}<em class="airline">직항</em></div></div>
+                        </div>
+                    `)
+                }
+                const targetHtml = document.getElementById('table_desc4')
+                const targetHtml2 = document.getElementById('table_desc5')
+                targetHtml.innerHTML = returnArray.toString().replaceAll(",","")
+                targetHtml2.innerHTML = returnArray2.toString().replaceAll(",","")
+            }
+        }
+        xhttp.open('POST', 'bibbox.json', true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("data=0")
     </script>
 </body>
 </html>
