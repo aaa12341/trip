@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>마이리얼트립</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/resposive.css">
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <div class="home_banner">
+             <img src="./img/banner7.jpg" alt="">
+        </div>
+     <article>
+     <section>
+         <div class="content">
+             <h2>인기호텔</h2>
+             <ul class="home_tab">
+                 <li class="list home_tab_active" onclick="Act(0)">오사카</li>
+                 <li class="list" onclick="Act(1)">후쿠오카</li>
+                 <li class="list" onclick="Act(2)">라스베가스</li>
+                 <li class="list" onclick="Act(3)">도쿄</li>
+                 <li class="list" onclick="Act(4)">로마</li>
+                 <li class="list" onclick="Act(5)">타이페이</li>
+             </ul>
+             <div class="content_wrap" id="table_desc4">
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">밴쿠버</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">세부</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">괌</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">하와이</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+             </div>
+         </div>
+     </section>
+ 
+     <section style="margin-top:30px;">
+         <div class="content">
+             <h2>인기여행지</h2>
+             <ul class="home_tab">
+                 <li class="list home_tab_active" >오사카</li>
+                 <li class="list" >로마</li>
+                 <li class="list" >런던</li>
+                 <li class="list" >파리</li>
+                 <li class="list" >바르셀로나</li>
+                 <li class="list" >프라하</li>
+             </ul>
+             <div class="content_wrap" id="table_desc4">
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">밴쿠버</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">세부</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">괌</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+                 <div class="content_box"><div class="content_img"></div><div class="content_txt"><div class="nation">하와이</div><span class="trip">서울 - 밴쿠버<br/>1월23일 - 2월 15일</span><div class="price">256,000원~ <em class="airline">직항</em></div></div></div>
+             </div>
+         </div>
+     </section>
+     </article>
+       <footer></footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+        getQueryString()
+        HeaderRender("home")
+        ActiveList(0)
+        FooterRender()
+    </script>
+</body>
+</html>

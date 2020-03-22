@@ -208,30 +208,16 @@ div.round_boxs .inner_box h3{
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     margin-top: 10px;
-    margin-right: 10px;
     border-radius: 4px;
-    padding: 40px 65px;
+    padding: 39px 75px;
 }
-.trip_detail .trip_pic{
-    display: inline-block;
-    margin-right: 5px;
+.trip_detail .td{
+    float: left;
+    width: 31%;
+    margin-right: 20px;
 }
-.trip_detail .facebook{
-    display: inline-block;
-    width: 29%;
-    margin-right: 50px;
-}
-.trip_detail .insta{
-    display: inline-block;
-    width: 29%;
-    margin-right: 50px;
-}
-.trip_detail .naver{
-    display: inline-block;
-    width: 29%;
-}
-.trip_detail .name{
-    padding: 0 5px;
+.trip_detail .td.naver{
+    margin-right: 0;
 }
 .trip_detail .page_name{
     display: inline-block;
